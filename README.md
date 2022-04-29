@@ -1,6 +1,6 @@
 ## Static and dynamic library, building project using makefile
 
-#### Static library
+### Static library
 
 main.c use extern function from static library.
 
@@ -16,7 +16,7 @@ clean libraries, object files:
 
     make clean
 
-#### IMPORTANT
+### IMPORTANT
 
 Further we will use dynamic library. When we get dynamic library file, programm can't find it.
 We should run in command line, so we add path to out dynamic library: 
@@ -24,7 +24,7 @@ We should run in command line, so we add path to out dynamic library:
     LD_LIBRARY_PATH=`pwd`:\${LD_LIBRARY_PATH}
     export LD_LIBRARY_PATH
 
-#### Dynamic library, that are loaded during compilation
+### Dynamic library, that are loaded during compilation
 
 main.c use extern function from dynamic library.
 
@@ -40,7 +40,7 @@ clean libraries, object files:
 
     make clean
 
-#### Dynamic library, that are loaded when programm is running
+### Dynamic library, that are loaded when programm is running
 
 main.c use function from dynamic library.
 
