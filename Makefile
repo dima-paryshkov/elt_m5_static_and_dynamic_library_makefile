@@ -20,7 +20,7 @@ dynamic : main.o $(objDynamic)
 	@echo "\nPlease, run LD_LIBRARY_PATH=`pwd`:\${LD_LIBRARY_PATH}; export LD_LIBRARY_PATH. If you already done it, just ignore it."
 	@echo "After that you can run again ./result \n"
 	./result
-
+ 
 thirdPowerDyn.o : thirdPower.c
 	gcc -fPIC -c thirdPower.c -o thirdPowerDyn.o
 
